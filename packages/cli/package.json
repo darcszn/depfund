@@ -1,0 +1,51 @@
+{
+  "name": "depfund",
+  "version": "0.1.0",
+  "description": "Universal dependency funding scanner — surface funding info for every package in your project",
+  "main": "dist/index.js",
+  "bin": {
+    "depfund": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "test": "jest",
+    "lint": "eslint src --ext .ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "funding",
+    "dependencies",
+    "open-source",
+    "cli",
+    "npm",
+    "pypi",
+    "crates"
+  ],
+  "author": "darcszn",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darcszn/depfund.git",
+    "directory": "packages/cli"
+  },
+  "dependencies": {
+    "chalk": "5.3.0",
+    "cli-table3": "0.6.3",
+    "commander": "12.1.0",
+    "ora": "8.0.1",
+    "toml": "3.0.0"
+  },
+  "devDependencies": {
+    "@types/cli-table3": "0.6.4",
+    "@types/jest": "29.5.12",
+    "@types/node": "20.14.0",
+    "@types/toml": "2.0.2",
+    "jest": "29.7.0",
+    "ts-jest": "29.1.5",
+    "typescript": "5.4.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

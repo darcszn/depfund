@@ -1,0 +1,30 @@
+{
+  "name": "depfund",
+  "version": "1.0.0",
+  "description": "Universal dependency funding scanner — surface funding info for every package in your project",
+  "private": true,
+  "workspaces": [
+    "packages/cli",
+    "packages/web"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "dev:web": "npm run dev --workspace=packages/web",
+    "dev:cli": "npm run dev --workspace=packages/cli"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "@types/node": "^20.14.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darcszn/depfund.git"
+  },
+  "author": "darcszn",
+  "license": "MIT"
+}
