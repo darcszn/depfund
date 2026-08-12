@@ -37,7 +37,7 @@
     "toml": "3.0.0"
   },
   "devDependencies": {
-    "@types/cli-table3": "0.6.4",
+    "@types/cli-table3": "0.6.3",
     "@types/jest": "29.5.12",
     "@types/node": "20.14.0",
     "@types/toml": "2.0.2",

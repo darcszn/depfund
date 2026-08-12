@@ -1,7 +1,7 @@
 {
-  "buildCommand": "cd packages/web && npm run build",
+  "buildCommand": "cd packages/web && npm install && npm run build",
   "outputDirectory": "packages/web/.next",
-  "installCommand": "npm install",
+  "installCommand": "echo 'skip root install'",
   "framework": "nextjs",
   "regions": ["iad1"]
 }
