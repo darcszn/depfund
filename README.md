@@ -22,7 +22,7 @@ Drop in your `package.json`, `requirements.txt`, or `Cargo.toml` and get an inst
 
 ## Try it online
 
-**Web UI:** [depfund.vercel.app](https://depfund.vercel.app) — upload a manifest file, see the results instantly. No account needed.
+**Web UI:** [depfund-web.vercel.app](https://depfund-web.vercel.app) — upload a manifest file, see the results instantly. No account needed.
 
 ---
 
@@ -216,7 +216,7 @@ depfund/
 
 ## Web UI features
 
-The web interface at [depfund.vercel.app](https://depfund.vercel.app) provides:
+The web interface at [depfund-web.vercel.app](https://depfund-web.vercel.app) provides:
 
 - **Drag-and-drop** file upload — no install required
 - **Instant results** with a live funding coverage bar

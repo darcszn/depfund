@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'depfund — Dependency Funding Scanner',
     description:
       'Scan your project dependencies and surface funding information for every package.',
-    url: 'https://depfund.vercel.app',
+    url: 'https://depfund-web.vercel.app',
     siteName: 'depfund',
     type: 'website',
   },
