@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from 'react';
 import type { ScanResult, FundedDependency } from '@/types';
+import { CopyButton } from './CopyButton';
 import { FundingBadge } from './FundingBadge';
 import { StatsBar } from './StatsBar';
 
@@ -313,18 +314,20 @@ function DependencyRow({ dep }: { dep: FundedDependency }) {
               <span className="text-xs text-slate-400">Funding links</span>
               <div className="flex flex-wrap gap-2 mt-1">
                 {dep.funding.map((f) => (
-                  <a
-                    key={f.url}
-                    href={f.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={(e) => e.stopPropagation()}
-                    className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full
-                               bg-white border border-green-200 text-green-700 hover:bg-green-50 transition-colors"
-                  >
-                    <FundingTypeIcon type={f.type} />
-                    {f.type}
-                  </a>
+                  <div key={f.url} className="flex items-center gap-1">
+                    <a
+                      href={f.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full
+                                 bg-white border border-green-200 text-green-700 hover:bg-green-50 transition-colors"
+                    >
+                      <FundingTypeIcon type={f.type} />
+                      {f.type}
+                    </a>
+                    <CopyButton text={f.url} label={`Copy ${f.type} funding link`} />
+                  </div>
                 ))}
               </div>
             </div>
